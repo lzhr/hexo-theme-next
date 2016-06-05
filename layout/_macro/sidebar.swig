@@ -25,11 +25,13 @@
 
       <section class="site-overview sidebar-panel {% if not display_toc %} sidebar-panel-active {% endif %}">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
-               alt="{{ theme.author }}" />
-          <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
-          <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
+          <a href="{{config.root }}about">
+		    <img class="site-author-image" itemprop="image"
+                 src="{{ url_for( theme.avatar | default(theme.images + '/avatar.gif') ) }}"
+                 alt="{{ theme.author }}" />
+            <p class="site-author-name" itemprop="name">{{ theme.author }}</p>
+            <p class="site-description motion-element" itemprop="description">{{ theme.description }}</p>
+		  </a>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -41,10 +43,12 @@
 
           {% if site.categories.length > 0 %}
             <div class="site-state-item site-state-categories">
-              {% if theme.menu.categories %}<a href="{{ url_for(theme.menu.categories) }}">{% endif %}
+              {% if theme.menu.categories %}{% endif %}
+			  <a href="{{config.root }}categories">
                 <span class="site-state-item-count">{{ site.categories.length }}</span>
                 <span class="site-state-item-name">{{ __('state.categories') }}</span>
-              {% if theme.menu.categories %}</a>{% endif %}
+			  </a>
+              {% if theme.menu.categories %}{% endif %}
             </div>
           {% endif %}
 

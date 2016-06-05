@@ -30,11 +30,15 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+	
           <div id="content" class="content">
             {% block content %}{% endblock %}
           </div>
-          {% include '_partials/duoshuo-hot-articles.swig' %}
-          {% include '_partials/comments.swig' %}
+		  {% include '_partials/comments.swig' %}
+		  {% if page.type === 'post' || 'tags' %}
+            {% include '_partials/duoshuo-hot-articles.swig' %}
+          {% endif %}
+          
         </div>
         {% if theme.sidebar.display !== 'remove' %}
           {% block sidebar %}{% endblock %}

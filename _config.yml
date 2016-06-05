@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Hexo, NexT, lzhr"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -26,11 +26,12 @@ since: 2016
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-  categories: /categories
+  #categories: /categories
   archives: /archives
   tags: /tags
-  guestbook: /guestbook
-  about: /about
+  # guestbook: /guestbook
+  album: /album
+  # about: /about
   #commonweal: /404.html
 
 
@@ -48,7 +49,7 @@ menu_icons:
   tags: tags
   archives: archive
   commonweal: heartbeat
-
+  album: picture-o
 
 
 
@@ -282,7 +283,22 @@ duoshuo_info:
   admin_enable: true
   user_id: 6287445814063138000
   #admin_nickname: 任飞扬
+  
+# Duoshuo ShortName
+duoshuo_shortname: lzhr
 
+# Share
+duoshuo_share: true
+
+# 多说热评文章 true 或者 false
+duoshuo_hotartical: true
+
+# Show number of visitors to each article.
+# You can visit https://leancloud.cn get AppID and AppKey.
+leancloud_visitors:
+  enable: true
+  app_id: FXwn0MHFWo5wWibUiNCIw62N-gzGzoHsz
+  app_key: j4662uq1cf2WzVD7vPO0Ntrb
 
 # Facebook SDK Support.
 # https://github.com/iissnan/hexo-theme-next/pull/410
@@ -294,17 +310,10 @@ facebook_sdk:
   webmaster:    #true
 
 
-# Show number of visitors to each article.
-# You can visit https://leancloud.cn get AppID and AppKey.
-leancloud_visitors:
-  enable: true
-  app_id: FXwn0MHFWo5wWibUiNCIw62N-gzGzoHsz
-  app_key: j4662uq1cf2WzVD7vPO0Ntrb
-
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
+# count values only if the other configs are false
 busuanzi_count:
-  # count values only if the other configs are false
   enable: true
   # custom uv span for the whole site
   site_uv: true
