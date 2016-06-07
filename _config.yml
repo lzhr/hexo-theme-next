@@ -30,7 +30,7 @@ menu:
   archives: /archives
   tags: /tags
   # guestbook: /guestbook
-  album: /album
+  album: http://lzhr.github.io/pictures/
   # about: /about
   #commonweal: /404.html
 
