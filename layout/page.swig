@@ -18,6 +18,7 @@
   <div id="posts" class="posts-expand">
     {# tagcloud page support #}
     {% if page.type === "tags" %}
+		
       <div class="tag-cloud">
         <div class="tag-cloud-title">
             {{ _p('counter.tag_cloud', site.tags.length) }}
@@ -26,6 +27,7 @@
           {{ tagcloud({min_font: 12, max_font: 30, amount: 200, color: true, start_color: '#ccc', end_color: '#111'}) }}
         </div>
       </div>
+	  {% include '_partials/duoshuo-hot-articles.swig' %}
     {% elif page.type === 'categories' %}
       <div class="category-all-page">
         <div class="category-all-title">
@@ -38,10 +40,15 @@
     {% else %}
       {{ page.content }}
     {% endif %}
+	{% if page.type === 'about' %}
+		 {% include '_partials/bgm.swig' %}
+	{% endif %}
+         
   </div>
-
 {% endblock %}
 
+
+	
 {% block sidebar %}
   {{ sidebar_template.render(false) }}
 {% endblock %}

@@ -25,7 +25,7 @@
       {% endif %}
     </div>
   </div>
-
+	{% include '_partials/duoshuo-hot-articles.swig' %}
 {% endblock %}
 
 {% block sidebar %}

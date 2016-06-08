@@ -34,11 +34,7 @@
           <div id="content" class="content">
             {% block content %}{% endblock %}
           </div>
-		  {% include '_partials/comments.swig' %}
-		 
-		 {% if page.type === 'post' || 'tags' %}
-            {% include '_partials/duoshuo-hot-articles.swig' %}
-         {% endif %}
+		  {% include '_partials/comments.swig' %}		 
           
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -47,9 +43,6 @@
       </div>
     </main>
 	
-	<% if page.type === 'about' %>
-		 {% include '_partials/bgm.swig' %}
-	<% endif %>
 	
     <footer id="footer" class="footer">
       <div class="footer-inner">
