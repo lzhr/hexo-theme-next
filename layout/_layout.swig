@@ -45,7 +45,9 @@
         {% endif %}
       </div>
     </main>
-
+	<% if page.type === 'about' %}
+		 {% include '_partials/bgm.swig' %}
+	<% ednif %>
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
