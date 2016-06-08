@@ -35,9 +35,10 @@
             {% block content %}{% endblock %}
           </div>
 		  {% include '_partials/comments.swig' %}
-		  {% if page.type === 'post' || 'tags' %}
+		 
+		 {% if page.type === 'post' || 'tags' %}
             {% include '_partials/duoshuo-hot-articles.swig' %}
-          {% endif %}
+         {% endif %}
           
         </div>
         {% if theme.sidebar.display !== 'remove' %}
@@ -45,9 +46,11 @@
         {% endif %}
       </div>
     </main>
-	<% if page.type === 'about' %}
+	
+	<% if page.type === 'about' %>
 		 {% include '_partials/bgm.swig' %}
-	<% ednif %>
+	<% endif %>
+	
     <footer id="footer" class="footer">
       <div class="footer-inner">
         {% include '_partials/footer.swig' %}
