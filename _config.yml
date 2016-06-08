@@ -235,7 +235,7 @@ wechat_subscriber:
 
 # MathJax Support
 mathjax:
-  enable: false
+  enable: true
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
@@ -243,7 +243,7 @@ mathjax:
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 4a349bfc3e2b922fcbb0e8e27ea136f7
 
 # Duoshuo ShortName
 #duoshuo_shortname: lzhr
@@ -286,10 +286,9 @@ duoshuo_info:
   #admin_nickname: 任飞扬
   
 # Duoshuo ShortName
-duoshuo_shortname: lzhr
+# duoshuo_shortname: lzhr
 
-# Share
-duoshuo_share: true
+
 
 # 多说热评文章 true 或者 false
 duoshuo_hotartical: true
@@ -330,10 +329,10 @@ busuanzi_count:
   page_pv_footer:
 
 # Tencent analytics ID
-# tencent_analytics:
+  tencent_analytics: 56713948
 
 # Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO
-baidu_push: false
+baidu_push: true
 
 
 
