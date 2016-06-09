@@ -1,6 +1,6 @@
 <span id="musicControl">
         <a id="mc_play" class="stop" onclick="play_music();">
-            <audio id="musicfx" loop="loop" autoplay="">
+            <audio id="musicfx" loop="loop" >
                 <source src="http://link.hhtjim.com/163/399925764.mp3" type="audio/mpeg">
             </audio>
         </a>
