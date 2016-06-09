@@ -1,6 +1,6 @@
 <span id="musicControl">
         <a id="mc_play" class="stop" onclick="play_music();">
-            <audio id="musicfx" loop="loop" autoplay="autoplay">
+            <audio id="musicfx" loop="loop" autoplay="">
                 <source src="http://link.hhtjim.com/163/399925764.mp3" type="audio/mpeg">
             </audio>
         </a>
@@ -32,7 +32,7 @@ function play_music(){
             $('#mc_play').attr('class','on');
         }
         $('#music_play_filter').hide();
-        event.stopPropagation(); //��ֹð�� 
+        event.stopPropagation(); //×èÖ¹Ã°ÅÝ 
     }
     function just_play(id){
         $('#mc_play audio').get(0).play();
@@ -40,7 +40,7 @@ function play_music(){
         if (typeof(id)!='undefined'){
             $('#music_play_filter').hide();
         }
-        event.stopPropagation(); //��ֹð�� 
+        event.stopPropagation(); //×èÖ¹Ã°ÅÝ 
     } 
     function is_weixn(){
         return false;
