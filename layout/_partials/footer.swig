@@ -5,7 +5,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">{{ config.author }}</span>
+  <span class="author" itemprop="copyrightHolder"><a href="http://github.com/{{ config.author }}">{{ config.author }}</a></span>
 </div>
 
 <div class="powered-by">
@@ -18,4 +18,3 @@
     NexT.{{ theme.scheme }}
   </a>
 </div>
-
